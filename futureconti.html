@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Future Continuous Tense</title>
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Sticky Main Menu */
+    .menu {
+        position: sticky;
+        top: 0;
+        background-color: #4CAF50;
+        padding: 3px;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 9px;
+        font-size: 15px;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    /* Explanation Box */
+    .explanation-box {
+        border: 2px solid #4CAF50;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    .explanation-box h2 {
+        text-align: center;
+    }
+
+    /* Affirmative Table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        padding: 15px;
+        text-align: left;
+        border: 1px solid black;
+    }
+
+    th {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    /* Row for structure and formula */
+    tr.formula {
+        background-color: #FCC2C2;
+    }
+
+    /* 3D Button */
+    .btn-3d {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .btn-3d:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Timer and translation handling */
+    .translation {
+        display: none;
+        color: green;
+        font-weight: bold;
+    }
+
+    .timer {
+        font-size: 16px;
+        color: red;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    /* Section Headings */
+    h2 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+  </style>
+</head>
+
+<body>
+  
+<!-- Sticky Main Menu -->
+<div class="menu">
+    <a href="index.html">Home</a>
+    <a href="#affirmative">Affirmative</a>
+    <a href="#negative">Negative</a>
+    <a href="#interrogative">Interrogative</a>
+</div>
+
+<!-- Content Container -->
+<div class="container">
+    
+    <!-- Explanation Box -->
+    <div class="explanation-box">
+        <h2>Future Continuous Tense (फ्यूचर कंटीन्यूस टेंस)</h2>
+        <p><strong>English Explanation:</strong> The Future Continuous tense is used to describe actions that will be ongoing at a specific time in the future. It is formed using <strong>will be</strong> + <strong>verb-ing</strong>.</p>
+        <p><strong>Hindi Explanation:</strong> फ्यूचर कंटीन्यूस टेंस का उपयोग भविष्य में किसी निश्चित समय पर चल रही क्रियाओं को दर्शाने के लिए किया जाता है। इसे <strong>will be</strong> + <strong>verb-ing</strong> का उपयोग करके बनाया जाता है।</p>
+        
+        <h3>Usage of the verb in Future Continuous:</h3>
+        <p><strong>will be + verb-ing</strong> is used to talk about actions in progress in the future.</p>
+    </div>
+
+<!-- Affirmative Sentences Table for Future Continuous Tense -->
+<h2 id="affirmative">Affirmative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Affirmative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Subject + will be + Verb-ing + Object</td>
+        </tr>
+
+        <!-- Affirmative Sentences -->
+        <tr>
+            <td>मैं कल स्कूल जा रहा हूँ।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will be going to school tomorrow.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह अगले सप्ताह किताब पढ़ रहा होगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will be reading a book next week.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वे दोपहर के समय खेल रहे होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They will be playing in the afternoon.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हम यात्रा कर रहे होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We will be traveling.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह टीवी देख रही होगी।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'She will be watching TV.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैं अगले साल अपना पाठ्यक्रम पूरा कर रहा हूँ।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will be completing my course next year.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हम अगले महीने काम कर रहे होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We will be working next month.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह पत्र लिख रहा होगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will be writing a letter.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>तुम लोग खा रहे होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'You will be eating.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हम संगीत सुन रहे होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We will be listening to music.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह चित्र बना रही होगी।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'She will be drawing a picture.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैं अपने दोस्तों से मिल रहा हूँ।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will be meeting my friends.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हम वहाँ जा रहे होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We will be going there.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>तुम लोग पढ़ रहे होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'You will be studying.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वे खेल रहे होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They will be playing.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Negative Sentences Table for Future Continuous Tense -->
+<h2 id="negative">Negative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Negative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Subject + will not be + Verb-ing + Object</td>
+        </tr>
+
+        <!-- Negative Sentences -->
+        <tr>
+            <td>मैं कल स्कूल नहीं जा रहा हूँ।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will not be going to school tomorrow.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह अगले सप्ताह किताब नहीं पढ़ रहा होगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will not be reading a book next week.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वे दोपहर के समय खेल नहीं रहे होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They will not be playing in the afternoon.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <!-- Add 12 more negative sentences similarly -->
+    </tbody>
+</table>
+
+<!-- Interrogative Sentences Table for Future Continuous Tense -->
+<h2 id="interrogative">Interrogative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Interrogative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Will + Subject + be + Verb-ing + Object?</td>
+        </tr>
+
+        <!-- Interrogative Sentences -->
+        <tr>
+            <td>क्या मैं कल स्कूल जा रहा हूँ?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Will I be going to school tomorrow?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या वह अगले सप्ताह किताब पढ़ रहा होगा?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Will he be reading a book next week?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या वे दोपहर में खेल रहे होंगे?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Will they be playing in the afternoon?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <!-- Add 12 more interrogative sentences similarly -->
+    </tbody>
+</table>
+
+<!-- Script to handle translations and timing -->
+<style>
+          /* Back button styling */
+          .back-btn {
+            background-color: #FF5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+          }
+  
+          .back-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+          }
+</style>
+
+    
+    
+    <script>
+        let activeTimer = false;
+
+        function startTranslation(button, translationText) {
+            if (activeTimer) return; // If any timer is running, prevent clicking
+
+            const buttonRow = button.parentElement;
+            const translationElement = buttonRow.querySelector('.translation');
+            const timerElement = buttonRow.querySelector('.timer');
+
+            // Reset any other visible translations
+            const allTranslations = document.querySelectorAll('.translation');
+            const allTimers = document.querySelectorAll('.timer');
+            const allButtons = document.querySelectorAll('.btn-3d');
+
+            allTranslations.forEach(trans => trans.style.display = 'none');
+            allTimers.forEach(timer => timer.textContent = '');
+            allButtons.forEach(btn => btn.style.display = 'inline-block');
+
+            // Hide button and start 5-second timer
+            button.style.display = 'none';
+            activeTimer = true;
+
+            let countdown = 5;
+            const interval = setInterval(() => {
+                timerElement.textContent = `(${countdown}s remaining)`;
+                countdown--;
+            }, 1000);
+
+            setTimeout(() => {
+                clearInterval(interval);
+                timerElement.textContent = '';
+                translationElement.innerHTML = translationText;
+                translationElement.style.display = 'inline-block';
+
+                activeTimer = false; // Allow other buttons to be clicked
+            }, 5000);
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+          /* tense chart button styling */
+          .tensechart {
+            background-color: #2F22FF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 70px;
+            left: 20px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 1);
+            transition: transform 0.2s ease;
+          }
+  
+          .tensechart:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+          }
+          
+</style>
+  <div>
+    <button class="tensechart" onclick="window.location.href='tensechart.html';">Tense Chart ✅</button>
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>

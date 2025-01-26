@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Present Perfect Continuous Tense</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Sticky Main Menu */
+    .menu {
+        position: sticky;
+        top: 0;
+        background-color: #4CAF50;
+        padding: 3px;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 9px;
+        font-size: 15px;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    /* Explanation Box */
+    .explanation-box {
+        border: 2px solid #4CAF50;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    .explanation-box h2 {
+        text-align: center;
+    }
+
+    /* Affirmative Table */
+    table {
+        width: 100%;
+        border-collapse: ;
+        margin-bottom: 30px;
+    }
+
+    td {
+        padding: 15px;
+        text-align: left;
+        border: 1px solid black;
+    }
+th {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid black;
+}
+    /* Row for structure and formula */
+    tr.formula {
+        background-color: #FCC2C2;
+    }
+
+    /* 3D Button */
+    .btn-3d {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .btn-3d:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Timer and translation handling */
+    .translation {
+        display: none;
+        color: green;
+        font-weight: bold;
+    }
+
+    .timer {
+        font-size: 16px;
+        color: red;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    /* Section Headings */
+    h2 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+
+</style>
+<body>
+  
+
+<!-- Sticky Main Menu -->
+<div class="menu">
+    <a href="index.html">Home</a>
+    <a href="#affirmative">Affirmative</a>
+    <a href="#negative">Negative</a>
+    <a href="#interrogative">Interrogative</a>
+</div>
+
+<!-- Content Container -->
+<div class="container">
+    
+    <!-- Explanation Box -->
+    <div class="explanation-box">
+        <h2>Present Perfect Continuous Tense (प्रेज़ेंट परफेक्ट कंटीन्यूअस टेंस)</h2>
+        <p><strong>English Explanation:</strong> The Present Perfect Continuous tense is used to describe actions that started in the past and are still continuing or just finished, emphasizing the duration. It is formed using <strong>has/have been</strong> + present participle of the verb (verb+ing) along with <strong>since</strong> or <strong>for</strong> to indicate time.</p>
+        <p><strong>Hindi Explanation:</strong> प्रेज़ेंट परफेक्ट कंटीन्यूअस टेंस का उपयोग उन कार्यों के लिए किया जाता है जो अतीत में शुरू हुए थे और अभी भी जारी हैं या अभी-अभी समाप्त हुए हैं, और जो समय की अवधि पर जोर देते हैं। इसे <strong>has/have been</strong> + क्रिया का वर्तमान कालीन रूप (क्रिया+ing) का उपयोग करके <strong>since</strong> या <strong>for</strong> के साथ समय दर्शाने के लिए बनाया जाता है।</p>
+        
+        <h3>Usage of has/have been:</h3>
+        <table border="1">
+            <tr>
+                <th>Subject</th>
+                <th>To have been Verb</th>
+            </tr>
+            <tr>
+                <td>I/We/You/They</td>
+                <td>have been</td>
+            </tr>
+            <tr>
+                <td>He/She/It</td>
+                <td>has been</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+<!-- Affirmative Sentences Table for Present Perfect Continuous Tense -->
+<h2 id="affirmative">Affirmative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Affirmative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Subject + has/have been + Verb(+ing) + Object + since/for + time</td>
+        </tr>
+
+        <!-- Affirmative Sentences -->
+        <tr>
+            <td>मैं सुबह से पढ़ाई कर रहा हूँ।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I have been studying since morning.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह तीन घंटे से दौड़ रहा है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He has been running for three hours.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वे रात से बात कर रहे हैं।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They have been talking since night.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हम बारिश में दो घंटे से इंतजार कर रहे हैं।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We have been waiting in the rain for two hours.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <!-- Add more sentences as required -->
+    </tbody>
+</table>
+
+<!-- Negative Sentences Table for Present Perfect Continuous Tense -->
+<h2 id="negative">Negative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Negative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Subject + has/have not been + Verb(+ing) + Object + since/for + time</td>
+        </tr>
+
+        <!-- Negative Sentences -->
+        <tr>
+            <td>मैं एक घंटे से पढ़ाई नहीं कर रहा हूँ।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I have not been studying for an hour.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह तीन दिनों से संगीत नहीं सुन रहा है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He has not been listening to music for three days.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वे टीवी नहीं देख रहे हैं जब से बारिश शुरू हुई है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They have not been watching TV since the rain started.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हम दो घंटे से गाने नहीं गा रहे हैं।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We have not been singing songs for two hours.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <!-- Add more sentences as required -->
+    </tbody>
+</table>
+
+
+<!-- Interrogative Sentences Table for Present Perfect Continuous Tense -->
+<h2 id="interrogative">Interrogative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Interrogative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Has/Have + Subject + been + Verb(+ing) + Object + since/for + time?</td>
+        </tr>
+
+        <!-- Interrogative Sentences -->
+        <tr>
+            <td>क्या वह सुबह से पढ़ रहा है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Has he been studying since morning?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या आप तीन घंटों से दौड़ रहे हैं?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have you been running for three hours?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या वे रात से बात कर रहे हैं?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have they been talking since night?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या हम बारिश में दो घंटे से इंतजार कर रहे हैं?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have we been waiting in the rain for two hours?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <!-- Add more sentences as required -->
+    </tbody>
+</table>
+
+    
+    <script>
+        let activeTimer = false;
+
+        function startTranslation(button, translationText) {
+            if (activeTimer) return; // If any timer is running, prevent clicking
+
+            const buttonRow = button.parentElement;
+            const translationElement = buttonRow.querySelector('.translation');
+            const timerElement = buttonRow.querySelector('.timer');
+
+            // Reset any other visible translations
+            const allTranslations = document.querySelectorAll('.translation');
+            const allTimers = document.querySelectorAll('.timer');
+            const allButtons = document.querySelectorAll('.btn-3d');
+
+            allTranslations.forEach(trans => trans.style.display = 'none');
+            allTimers.forEach(timer => timer.textContent = '');
+            allButtons.forEach(btn => btn.style.display = 'inline-block');
+
+            // Hide button and start 5-second timer
+            button.style.display = 'none';
+            activeTimer = true;
+
+            let countdown = 5;
+            const interval = setInterval(() => {
+                timerElement.textContent = `(${countdown}s remaining)`;
+                countdown--;
+            }, 1000);
+
+            setTimeout(() => {
+                clearInterval(interval);
+                timerElement.textContent = '';
+                translationElement.innerHTML = translationText;
+                translationElement.style.display = 'inline-block';
+
+                activeTimer = false; // Allow other buttons to be clicked
+            }, 5000);
+        }
+    </script>
+
+</body>
+</html>

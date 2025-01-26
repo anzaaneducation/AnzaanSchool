@@ -1,0 +1,342 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Anzaan School Education</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+
+</head>
+
+<body>
+  <header>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqdK75iqN-OA-fe7whPP8CH1G-J0K1Wu1sG12GX46ENiN5aOZ1sI6eITmGWvdXmURmXL1ZxUsH11lTQGaU6uHy1xa3dGwTqWpBS4jp_UHmdpLmVTB8spiWE1kTW86iWBupYHycgfxkvc_Ef-nEakOO_JZvzXtUOw_JDYnyuNYknSHDil1RY_F5SP3-_zOD/s3500/Logo%20name.jpg" alt="Anzaan Education logo" />
+    <h1>Anzaan School Education</h1>
+  </header>
+
+
+
+
+
+   
+
+
+    <div class="ticker-wrapper">
+        <div class="ticker">
+          <span style="color: orange">  ॐ कृष्णाय  </span>  
+          वासुदेवाय 
+           <span style="color: greenyellow">   हरये परमात्मने । </span>  
+         <span style="color: orange"> प्रणतः क्लेशनाशाय </span>  
+          गोविंदाय 
+         <span style="color: greenyellow"> नमो नमः || </span>  
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <main>
+
+    <h2>Important Knowledge</h2>
+    <div class="grid">
+      <a href="google.com">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZS4ptqD6O0wcr2UDtaYRJxhmyiudq9FOYRCT3c3f-mPfUIrPy6sbXoc8-Bw7_pHABzn8MRc8cgbeqet6IArj-cEaRvXMY4ND5JV9V2d57P5Wz5dVe6sKENzCy8_VDMpHCuF0TNse69xQ615zCyeIDAN_ULGVo_Mefc_22S3B-FIEM7U23siDr9W-voFZC/s1080/20250119_191458_0000.png" alt="Self-Growth icon" />
+        <span>Rajasthan Map [NEW]</span>
+      </a>
+     <a href="#" onclick="openImagePopup()">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl2J8RQI3diKoWEYYyWINZwgIqB3yRhwHGXM3HoDT-yN2RZyf7SDERazfRGZ72JZ9cufBNMIn5F7PWPD472MIi6-Z7uYUVy-DqHfsLXoVnMGOTcHDQeXOF2nyMGkinbPOIPeN9KNnwrhKZurwx-wHo0G8IzdLQq-2jOuJzAe-kSoy0kUBu0bk1BVy7Hhie/s800/6102734102382887533.jpg" alt="Business & Career icon" />
+  <span>heart</span>
+</a>
+
+<div id="imagePopup" class="popup" style="display: none;">
+  <div class="popup-content">
+    <button class="close-btn" onclick="closeImagePopup()">✖</button>
+    <h2>Heart Design</h2>
+    <img id="popupImage" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyWQ_Ezn8c6FqzkkkUfIVh48Oyw_JTvlhlTc_WmPP10bdOsVLa6z5IBLY4njiK-UauiTiK0dKHFKvDh32hWPeVP4OefFGQ9fs4R_cQ46HkNEgSjZTQA233qysiWsBxbobxao9j1rTUIDy4PfE5ZjO4DqClrmM220_3NHFnRBGTxHdq-6myNyrW4MSJtzNZ/s800/6061883865271746129.jpg" alt="Heart Design Image">
+  </div>
+</div>
+</div>
+</main>
+<script>
+  function openImagePopup() {
+    document.getElementById('imagePopup').style.display = 'flex';
+    document.getElementById('popupImage').src = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyWQ_Ezn8c6FqzkkkUfIVh48Oyw_JTvlhlTc_WmPP10bdOsVLa6z5IBLY4njiK-UauiTiK0dKHFKvDh32hWPeVP4OefFGQ9fs4R_cQ46HkNEgSjZTQA233qysiWsBxbobxao9j1rTUIDy4PfE5ZjO4DqClrmM220_3NHFnRBGTxHdq-6myNyrW4MSJtzNZ/s800/6061883865271746129.jpg";
+  }
+
+  function closeImagePopup() {
+    document.getElementById('imagePopup').style.display = 'none';
+  }
+</script>
+
+<style>
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #popupImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+</style>
+      
+    
+
+
+
+
+
+
+
+  <!-- Categories Section -->
+  <div class="categories-section">
+    <h2 class="section-title">
+      English Grammar [ "Tense" ]
+    </h2>
+    <div class="categories">
+      <a class="category" href="presentsimple.html">
+        <img alt="Self-Growth icon" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4jKNfAxA9ojAjyjVHUtoehpVSshw7EKvisW0kD0MB-f5V0cx9VpMdk7RzlcattUH9ODLw6TeuAl5NnWgSNMh9qYDmrqldxaIV1UlNUkqyTqYqZZl90psguCXKT5uR3hpag5AVad10ELRYT41n8C7JDLpcafgahCG50Z-tywcrj3EyLoUkwr1k8i2-toDq/s469/Tenses_20250118_125746_0000.png" />
+        <div>Present Simple</div> <!-- Title with button-like styling -->
+      </a>
+
+
+
+
+      <a class="category" href="presentcontinuous.html">
+        <img alt="Business & Career icon" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQJxP-hpZSpqM1cfKcmxnII4SRms4Pe0sCqyGPsw0egAtrmZBpxSgxsGZ4DAywyi5SLHiRT6bkboc1EB-HtuOWRZr01NFfHfg2VV_Fvn8a3TypfjS9Jp9VAzi3LhUTrZKtfFuAxWVgtI3p9-Ow4oFzV3TFenqqtwg9PFdu2sGHA3GvpExBUVvMtJblck5q/s469/Tenses_20250118_125747_0001.png" />
+        <div> Present Continuous Tense</div> <!-- Title with button-like styling -->
+      </a>
+      <a class="category" href="presentperfect.html">
+        <img alt="Business & Career icon" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9g3HrThTuQvJWiNLJoLVD-agb89IgmLjyIvhrMijb62wTjF87q9Mr3ZuUlBhNZgMZHeTVhokBN0fEAGuIMuL3-cu5g7M9YNt_6OEVuauCDqkF49RTS5NuomVWHCeSlLc70EnjpgIN4_teGPbBUiBE237M3NdE8ldm0xmSQoB6EvgkEOiPHfy0_j7N1lzA/s469/Tenses_20250118_125747_0002.png" />
+        <div> Present Perfect Tense </div> <!-- Title with button-like styling -->
+      </a><a class="category" href="PresentPerfectContinuous.html">
+        <img alt="Business & Career icon" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicg6zGi3GjI3bJzF2Ccns-ux6eGaZc7heMgMatmH6wcHYeQBp7wXE_P16x_TZ3qWP0inFpp-leChgmHggb15u2Fwjj2XImhrV4rFGfUABQOc4vDc05A0YhpwMGd0mhDNaFkiUBoCpvN65GNpSa57cKkMRhQrg5f5QmPsbtO4Jvq_uSNDcMTSnkm_GYYrKb/s469/Tenses_20250118_125747_0003.png" />
+        <div> Persent Perf. Conti. Tense</div> <!-- Title with button-like styling -->
+      </a><a class="category" href="pastsimple.html">
+        <img alt="Business & Career icon" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWjSDpTa5E4h_0tE2_TKmiKTA_svb3Zp0mywh3waL3dLBIxAZxTicRdsvm4IGLdWYZJ8-oLhe8sxe4vlN81txyrkkLYw3yb-lUea_k2nxM_thk97tSZ4p_2-Uwtip0TUKY7EjYDwrIIoPTCKTHS4QksbcBSpoqL1vYDd89FzYMcpdWVRDbLoqqNnZvG3SM/s469/Tenses_20250118_125747_0004.png" />
+        <div> Past Simple Tense</div> <!-- Title with button-like styling -->
+      </a><a class="category" href="pastcontinuous.html">
+        <img alt="Business & Career icon" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia59iusTKrOM8zFkkNH735uUCDRwvBVEEIfD6vux9x9vX0kH4tpa990u5DbO65DIsIu6AZytZCTs4iwwovvgMY3G93HEdL_C3BcUcovh_AYfTYa4uwg9Neuey3rMMobrJWM6_niG4sKsI7-RdPLEvY6d0LserDSvMLOiauidWDMv11bGIhsaPtMosatxp9/s469/Tenses_20250118_125747_0005.png" />
+        <div> Past Continuous Tense</div> <!-- Title with button-like styling -->
+      </a><a class="category" href="pastperfect.html">
+        <img alt="Business & Career icon" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLIK0WPaUbDtRK-O6CrFUv55OdCgm_qch_4jdfy3QSw99Crdnma80x2NDBefJp3GcA34Nk1liToYTtkV8FjmNcmnfpqvc-y1ewhOlbGC9MjyS_LSZgCceBspcqTIfnzXheFuq0GWqgofONI8eIs7JUbFe6tMTQKGPq1zWWx1dLOb9dvWhnjRLwCAQDc1dz/s469/Tenses_20250118_125747_0006.png" />
+        <div> Past Perfect Tense</div> <!-- Title with button-like styling -->
+      </a><a class="category" href="pastperconti.html">
+        <img alt="Business & Career icon" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieu0hq_BdfqnkWz4FVc8NAJy33ohkLJL4mDdonnlImeHMmboGgWxksr1ufMqFaQM5gNEQ2ihCqegAOOLVbLsRicB_Edo5Qr999S28GkztQE2ps3wU11ZMcsOcU2bM-Abhmh0GYQQTVU3pFOAqD6OPlg5uvDFFzX03i2A5K8TeqhieEzjuqjtQQGkdLIc6B/s469/Tenses_20250118_125747_0007.png" />
+        <div> Past Perf. Conti.Tense</div> <!-- Title with button-like styling -->
+      </a><a class="category" href="futuresimple.html">
+        <img alt="Business & Career icon" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNt2cCwWbPcUBxJKOQmKA9BRCgcyhRVGnPFU3AI5_GaDuqxA6QveOYzK9aML-IfGaYg7aSxQyoCbz7WzApAFCWnTI-WCrgGf6cACEvAOKut2OSZPqz0Hi4xXazym7-SIFeEle2Ob6ZoMzFbe04nAQALJXvTwhAbQ6-C77BzjIUr2X7OYWTjMUNwAk_ys4f/s469/Tenses_20250118_125747_0008.png" />
+        <div> Future Simple Tense</div> <!-- Title with button-like styling -->
+      </a><a class="category" href="futureconti.html">
+        <img alt="Business & Career icon" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkdapXGZe-jrg1Z3l-l3YKkspeFTcAspMD8afdE2mI3kh5ZYYOhGeE6WIFj5PRyTnUn-qVEnqJg0R9CojtzsNV2pcXZCuURJRIUflz_VyYSDQX8oL8lt9b9XBgzoqFNEPhv9uxipk3s0Zi82Rl8avzKUCSuYW3lN-9jXNLsI9cmOys4_TD92LjzMCgpsBF/s469/Tenses_20250118_125747_0009.png" />
+        <div> Future Continuous Tense</div> <!-- Title with button-like styling -->
+      </a><a class="category" href="futureperfect.html">
+        <img alt="Business & Career icon" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv5aDp1KEAXPVFaQqdPwfWfnr7s8dsSAGYORtbOA1yQtIrL3tcOldX1kfFGO8AONWrIyLe-R4Cn7iGTZr_DFM01uWB7aC4zpXvDPZfS7uFuXcpxJlag7cz6gwVnio0LWjgdT1doaNP9hjyCEkRHgownPJNxGoCoce0NdQLPC2LdL0PXCeeGGVoitzdVU6M/s469/Tenses_20250118_125747_0010.png" />
+        <div> Future Perfect Tense</div> <!-- Title with button-like styling -->
+      </a><a class="category" href="futureperfectconti.html">
+        <img alt="Business & Career icon" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3eE20TAzrMFZPGcOp9lVTY1SOqa8JTiCYsUAyh7KVWg0G9I7agWyzDRF_kBAkWLZ6QMWlG1YJ6Hs3UPOZG6dVHaLaXlte4YXmzAcK4TjL2RHiAILIWNdx_UZozp39sl5G_b17cFicAkJphQ8rWxzuE3IY_nhy4AVaaLCFbaFH0rFgO2W7wqSs2d4ehRV4/s469/Tenses_20250118_125747_0011.png" />
+        <div> Future Perf. Conti. Tense</div> <!-- Title with button-like styling -->
+      </a>
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <main>
+    <div class="grid">
+      <a href="tensechart.html">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjE3oPrfHVXs0_jx0qeGn6UWXGFmAY_jQ548y5fuWL04nrHZ5ubRHShO3YRH5HdrC77g0GNwV6wL9meQ_OmLsi-K4nVBDCwUgWVZLEQ22bU1S0k0mxGYfTLGqXmGapKDplLHFs1PN9eIIy6DAwG0ySrEyyxap6fbjPBm1qHtK4MSN5AunHv886EksW0aE90/s125/Tense%20Chart_20250119_162609_0000.png " alt="Self-Growth icon" />
+        <span> Tense Chart </span>
+      </a>
+      <a href="12tense.html">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgcF2Ju9fZg1YtP21uEHotGPJXdt_uoablYbmjUSAYrTnmBEyAT2vizI5oUPYffTOsjLzqHOREH5x3NaMcOuHHGY09wiCpNjwMMXmw77fqiIHETfFFXEgCG_7wh3GCxKLqeQDr_aKw_kRg6XN3R1EU6xu-OjcCof5rgl-9XQ3sH_-P2d7lT3Mnr0mEC7V9/s1080/Tense_20250119_192119_0000.png" alt="Business & Career icon" />
+        <span>12 Tense In One Chart</span>
+      </a>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Latest Summaries Section -->
+  <div class="summaries-section">
+    <h2 class="section-title">
+      Mathematics
+    </h2>
+    <div class="summaries">
+<a class="summary" onclick="openGallery()">
+  <img alt="book cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUrDTAh41LtjfeIXdj0ZYPP4mA67XseX0mxEOB89VlBZk8D0m6-s8lS23o2DIjYNsNB3-ld_8OZI_aB5jX8kZCgJMIHVbSR7Fovm2ENsZIGA3NalSBKMbPNnYUWFLOmKTdXQvs3-DkCL0Jvvp6WYFsaUHRYx67TpIObIXpg63mvzjfvVbQZglFsqBuuBLY/s1999/Cream%20and%20White%20Watercolor%20Background%20Document%20A4_20241226_191259_0000.jpg" />
+  <div class="summary-title">•All Formulas•</div>
+</a>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <br /><br /><br />
+  <br /><br />
+  <footer>
+    <div class="nav-links">
+      <a href="notification.html2">
+        <i class="fas fa-bell"></i>
+        <span>New</span>
+      </a>
+      <a href="index.html" class="active">
+        <i class="fas fa-search"></i>
+        <span>Explore</span>
+      </a>
+      <a href="Library.html">
+        <i class="fas fa-bookmark"></i>
+        <span>Library</span>
+      </a>
+      <a href="#">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  <!-- Popup Gallery -->
+<div id="galleryPopup" class="popup" style="display: none;">
+  <div class="popup-content">
+    <button class="close-btn" onclick="closeGallery()">✖</button>
+    <div class="thumbnail-gallery">
+      <!-- Thumbnail Images -->
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiX3yVpE3jzYM2DmHvBui1uJJWTTa9p2qXKKM0NxYMvNqTfaeVLDdOfkL7SexUr9gflXg83WPsriEUDwf5ys2fRSeMg7yd5GEOrWGElNS8WJ5oR3SzqndERWrOfRn08xRBwo22MxadosZj423Il2P3fQ8_8kcEbVz8LtUVdBaf2BtwOEppVZCM5Z6fewkrf/s2558/6102734102382887534.jpg" onclick="openFullImage(0)">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1Kt6tTEJxpObuUICB1jXOHrQqzauCgfsg4iHxRvGmgk6aHtF7xvI0wOFgCVrd7kEl_EE73QURp8hV6X3rVi5k_d9PI0B9mb4nYIw2TGvEokPH07p32m9QtEmER3HH9T8XXb4V1fqlezNvjQGgGZYJfVYftjUkSFTmSJ7Stu2ddONQOhrR-UoxtPM11kOA/s2558/6102734102382887535.jpg" onclick="openFullImage(1)">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg93UK9c1Zukz7Y5ViyQoIWatUv6jpHMaP5xoRYdym68my9weUWHSLXvA9H3Bby0TD3Gmwr6Gs6KXz4g0C2LUL6oYBsNfMVSl69WdfM8XmUXuxhD1eteynvflw2cAidImqn9lDjGmH8AF-9KW5mBu7UZq5oV6pA0WjxUAfshbzAQLmfOx2m3jvJKBDekzpD/s2558/6102734102382887536.jpg" onclick="openFullImage(2)">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz0nkLwsLIww5byvqhRzHMrtiDxi452qeLmOL4edD39y3WIQ8Q7Kj9Dey7WofInnkBnGBgKzL1_H0cFPBeDze50sqaf2M2qapcTPgy34dvJXFBojxPAWgZSa90umyIr8T0N_tvTKjJGfxc3wxj5upRqG_CZlkpd9eveMtXWdBy09MofMY3Ap2oZQZaA-Ps/s2558/6102734102382887537.jpg" onclick="openFullImage(3)">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKeF_Ro4I_68YMBT4rtpVk8zOkd5j3J6F1QSB34CwhyphenhyphensHt7OTrWEF0lpdW6Hq5SBozD8lUmcxOkfvIyceqy6U3u9Run0XeVgeMJ49CDSprbGmEcRTEFTT_QxLGbfq_SHYUAxvh7iN7B3OkP72-W7z5HSFpZdaRqJpxS7fz9E0uZD2mM8Rqa4HCYKPAglf9/s2558/6102734102382887538.jpg" onclick="openFullImage(4)">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZHn3iQbpUDHNSg9VlK2z9FeTVoUH4deprr-OuQU9HcHmSeB-1ACv_ycREUqdkH08SX2SQxaIu1uKIJoQcsvW2rhhM6PMaJevVOgLF0nQL3AV-wzrZZFFcbNCQP1283B4nBQR-a_yHJbgTR_LWEOCXuFsECWKtsj81vCWStuEJEYvS94X5zEuA5OvIG6xa/s2558/6102734102382887539.jpg" onclick="openFullImage(5)">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIINsoVTZBZUo6Z5FpP2Xf9RItaG4nys_9qMKNQV4eWnZM-VsNyqOvzfq32i0k4lzXUgpfgBETOv4k5ghAcPyLoKJXo0l_ATtaSR0hWQ98CDqsyIqS3B8SoBS_4QkHtsfjn1-G2xrNi9Tb_DG986QLbm2_coVqoc8wMg8eclvKjrm604iMR2vGiVSGEKN1/s2558/6102734102382887540.jpg" onclick="openFullImage(6)">
+    </div>
+  </div>
+</div>
+
+<!-- Full Image View -->
+<div id="fullImagePopup" class="popup" style="display: none;">
+  <div class="popup-content">
+    <button class="nav-btn prev-btn" onclick="showPreviousImage()">❮</button>
+    <button class="nav-btn next-btn" onclick="showNextImage()">❯</button>
+    <button class="close-btn" onclick="closeFullImage()">✖</button>
+    <img id="fullImage" src="" alt="Full Size Image">
+  </div>
+</div>
+
+
+<script>
+  
+   const images = [
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiX3yVpE3jzYM2DmHvBui1uJJWTTa9p2qXKKM0NxYMvNqTfaeVLDdOfkL7SexUr9gflXg83WPsriEUDwf5ys2fRSeMg7yd5GEOrWGElNS8WJ5oR3SzqndERWrOfRn08xRBwo22MxadosZj423Il2P3fQ8_8kcEbVz8LtUVdBaf2BtwOEppVZCM5Z6fewkrf/s2558/6102734102382887534.jpg",
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1Kt6tTEJxpObuUICB1jXOHrQqzauCgfsg4iHxRvGmgk6aHtF7xvI0wOFgCVrd7kEl_EE73QURp8hV6X3rVi5k_d9PI0B9mb4nYIw2TGvEokPH07p32m9QtEmER3HH9T8XXb4V1fqlezNvjQGgGZYJfVYftjUkSFTmSJ7Stu2ddONQOhrR-UoxtPM11kOA/s2558/6102734102382887535.jpg",
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg93UK9c1Zukz7Y5ViyQoIWatUv6jpHMaP5xoRYdym68my9weUWHSLXvA9H3Bby0TD3Gmwr6Gs6KXz4g0C2LUL6oYBsNfMVSl69WdfM8XmUXuxhD1eteynvflw2cAidImqn9lDjGmH8AF-9KW5mBu7UZq5oV6pA0WjxUAfshbzAQLmfOx2m3jvJKBDekzpD/s2558/6102734102382887536.jpg",
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz0nkLwsLIww5byvqhRzHMrtiDxi452qeLmOL4edD39y3WIQ8Q7Kj9Dey7WofInnkBnGBgKzL1_H0cFPBeDze50sqaf2M2qapcTPgy34dvJXFBojxPAWgZSa90umyIr8T0N_tvTKjJGfxc3wxj5upRqG_CZlkpd9eveMtXWdBy09MofMY3Ap2oZQZaA-Ps/s2558/6102734102382887537.jpg",
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKeF_Ro4I_68YMBT4rtpVk8zOkd5j3J6F1QSB34CwhyphenhyphensHt7OTrWEF0lpdW6Hq5SBozD8lUmcxOkfvIyceqy6U3u9Run0XeVgeMJ49CDSprbGmEcRTEFTT_QxLGbfq_SHYUAxvh7iN7B3OkP72-W7z5HSFpZdaRqJpxS7fz9E0uZD2mM8Rqa4HCYKPAglf9/s2558/6102734102382887538.jpg",
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZHn3iQbpUDHNSg9VlK2z9FeTVoUH4deprr-OuQU9HcHmSeB-1ACv_ycREUqdkH08SX2SQxaIu1uKIJoQcsvW2rhhM6PMaJevVOgLF0nQL3AV-wzrZZFFcbNCQP1283B4nBQR-a_yHJbgTR_LWEOCXuFsECWKtsj81vCWStuEJEYvS94X5zEuA5OvIG6xa/s2558/6102734102382887539.jpg",
+  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIINsoVTZBZUo6Z5FpP2Xf9RItaG4nys_9qMKNQV4eWnZM-VsNyqOvzfq32i0k4lzXUgpfgBETOv4k5ghAcPyLoKJXo0l_ATtaSR0hWQ98CDqsyIqS3B8SoBS_4QkHtsfjn1-G2xrNi9Tb_DG986QLbm2_coVqoc8wMg8eclvKjrm604iMR2vGiVSGEKN1/s2558/6102734102382887540.jpg"
+]; 
+
+  let currentIndex = 0;
+
+  function openGallery() {
+    document.getElementById('galleryPopup').style.display = 'flex';
+  }
+
+  function closeGallery() {
+    document.getElementById('galleryPopup').style.display = 'none';
+  }
+
+  function openFullImage(index) {
+    currentIndex = index;
+    document.getElementById('fullImage').src = images[currentIndex];
+    document.getElementById('fullImagePopup').style.display = 'flex';
+  }
+
+  function closeFullImage() {
+    document.getElementById('fullImagePopup').style.display = 'none';
+  }
+
+  function showPreviousImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    document.getElementById('fullImage').src = images[currentIndex];
+  }
+
+  function showNextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    document.getElementById('fullImage').src = images[currentIndex];
+  }
+</script>
+
+</body>
+
+
+</html>

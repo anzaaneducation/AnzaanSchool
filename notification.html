@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <title>Anzaan School Education</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .datee {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 10px;
+      background: #D3FFB8;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .date {
+      color: #666;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .school-name {
+      color: #2c3e50;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .notification-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      position: relative;
+      animation: fadeIn 0.5s ease-in-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .notification-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .image-section {
+      width: 100%;
+      max-height: auto; /* Adjusted to auto */
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .image-section img:hover {
+      transform: scale(1.05);
+    }
+
+    .content {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="notification-box">
+    <div class="datee">
+      <div class="date">26-01-2025
+        <i class="fa fa-bell"></i>
+
+      </div>
+      <div class="school-name">
+
+        <i class='fas fa-paper-plane' style='font-size:18px'></i>
+
+        Anzaan School Education
+      </div>
+
+    </div>
+    <h2>App Launching</h2>
+    <div class="image-section">
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5I27j-UzfGHTfx-0LKNWwGGYnqSrwk1l3XSduJKNBsnl17GHB3_lVW_RNDqkqPIe0ekRTOZhLc-HUr2-3mZDgf1CcLiO9Yt4emPJb0mhKNmabFom0dRk_-eE_4kv1FsJWG6L4cgZJ5qo15cC5KpT9c5mrqjzWdI_RmM2R5BFyQKNi8uUrSLMxtK0iPSau/s800/6102734102382887563.jpg"
+        alt="School Building">
+    </div>
+    <div class="content">
+      <p>Welcome to <span style="background-color: palevioletred; color: black;">Anzaan School Education</span> </p>
+    </div>
+  </div>
+
+
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Future Perfect Tense</title>
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Sticky Main Menu */
+    .menu {
+        position: sticky;
+        top: 0;
+        background-color: #4CAF50;
+        padding: 3px;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 9px;
+        font-size: 15px;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    /* Explanation Box */
+    .explanation-box {
+        border: 2px solid #4CAF50;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    .explanation-box h2 {
+        text-align: center;
+    }
+
+    /* Affirmative Table */
+    table {
+        width: 100%;
+        border-collapse: ;
+        margin-bottom: 30px;
+    }
+
+    td {
+        padding: 15px;
+        text-align: left;
+        border: 1px solid black;
+    }
+
+    th {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    /* Row for structure and formula */
+    tr.formula {
+        background-color: #FCC2C2;
+    }
+
+    /* 3D Button */
+    .btn-3d {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 1);
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .btn-3d:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Timer and translation handling */
+    .translation {
+        display: none;
+        color: green;
+        font-weight: bold;
+    }
+
+    .timer {
+        font-size: 16px;
+        color: red;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    /* Section Headings */
+    h2 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+  </style>
+</head>
+
+<body>
+  
+<!-- Sticky Main Menu -->
+<div class="menu">
+    <a href="index.html">Home</a>
+    <a href="#affirmative">Affirmative</a>
+    <a href="#negative">Negative</a>
+    <a href="#interrogative">Interrogative</a>
+</div>
+
+<!-- Content Container -->
+<div class="container">
+    
+    <!-- Explanation Box -->
+    <div class="explanation-box">
+        <h2>Future Perfect Tense (फ्यूचर परफेक्ट टेंस)</h2>
+        <p><strong>English Explanation:</strong> The Future Perfect tense describes an action that will have been completed before a specific time in the future. It is formed using <strong>will have</strong> + <strong>past participle</strong>.</p>
+        <p><strong>Hindi Explanation:</strong> फ्यूचर परफेक्ट टेंस का उपयोग भविष्य में किसी निश्चित समय से पहले पूरी हो चुकी क्रिया को व्यक्त करने के लिए किया जाता है। इसे <strong>will have</strong> + <strong>past participle</strong> का उपयोग करके बनाया जाता है।</p>
+        
+        <h3>Usage of the verb in Future Perfect:</h3>
+        <p><strong>will have + past participle</strong> is used to show that the action will be completed before a specific point in time in the future.</p>
+    </div>
+
+<!-- Affirmative Sentences Table for Future Perfect Tense -->
+<h2 id="affirmative">Affirmative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Affirmative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Subject + will have + Past Participle + Object</td>
+        </tr>
+
+        <!-- Affirmative Sentences -->
+        <tr>
+            <td>मैं काम खत्म कर चुका होऊंगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will have finished the work.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह किताब पढ़ चुका होगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will have read the book.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वे खेल समाप्त कर चुके होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They will have finished the game.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हमने परियोजना पूरी कर ली होगी।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We will have completed the project.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह पत्र लिख चुका होगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will have written the letter.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>तुम लोग खाना खा चुके होगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'You will have eaten the food.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैं यात्रा समाप्त कर चुका होऊंगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will have completed the journey.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हम बैठक खत्म कर चुके होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We will have finished the meeting.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह परीक्षा पास कर चुका होगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will have passed the exam.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>तुम लोग काम खत्म कर चुके होगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'You will have finished the work.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हम संगीत सुन चुके होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We will have listened to the music.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैं खाना पका चुका होऊंगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will have cooked the food.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वे पाठ पढ़ चुके होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They will have learned the lesson.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह दौड़ पूरी कर चुका होगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will have completed the race.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>तुम लोग सफाई कर चुके होगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'You will have cleaned the house.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Negative Sentences Table for Future Perfect Tense -->
+<h2 id="negative">Negative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Negative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Subject + will not have + Past Participle + Object</td>
+        </tr>
+
+        <!-- Negative Sentences -->
+        <tr>
+            <td>मैं काम खत्म नहीं कर चुका होऊंगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will not have finished the work.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह किताब नहीं पढ़ चुका होगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will not have read the book.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वे खेल समाप्त नहीं कर चुके होंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They will not have finished the game.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <!-- Add 12 more negative sentences similarly -->
+    </tbody>
+</table>
+
+<!-- Interrogative Sentences Table for Future Perfect Tense -->
+<h2 id="interrogative">Interrogative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Interrogative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Will + Subject + have + Past Participle + Object?</td>
+        </tr>
+
+        <!-- Interrogative Sentences -->
+        <tr>
+            <td>क्या मैं काम खत्म कर चुका होऊंगा?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Will I have finished the work?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या वह किताब पढ़ चुका होगा?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Will he have read the book?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या वे खेल समाप्त कर चुके होंगे?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Will they have finished the game?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <!-- Add 12 more interrogative sentences similarly -->
+    </tbody>
+</table>
+
+<style>
+  /* Back button styling */
+  .back-btn {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+
+  .back-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+
+
+<script>
+  let activeTimer = false;
+
+  function startTranslation(button, translationText) {
+    if (activeTimer) return; // If any timer is running, prevent clicking
+
+    const buttonRow = button.parentElement;
+    const translationElement = buttonRow.querySelector('.translation');
+    const timerElement = buttonRow.querySelector('.timer');
+
+    // Reset any other visible translations
+    const allTranslations = document.querySelectorAll('.translation');
+    const allTimers = document.querySelectorAll('.timer');
+    const allButtons = document.querySelectorAll('.btn-3d');
+
+    allTranslations.forEach(trans => trans.style.display = 'none');
+    allTimers.forEach(timer => timer.textContent = '');
+    allButtons.forEach(btn => btn.style.display = 'inline-block');
+
+    // Hide button and start 5-second timer
+    button.style.display = 'none';
+    activeTimer = true;
+
+    let countdown = 5;
+    const interval = setInterval(() => {
+      timerElement.textContent = `(${countdown}s remaining)`;
+      countdown--;
+    }, 1000);
+
+    setTimeout(() => {
+      clearInterval(interval);
+      timerElement.textContent = '';
+      translationElement.innerHTML = translationText;
+      translationElement.style.display = 'inline-block';
+
+      activeTimer = false; // Allow other buttons to be clicked
+    }, 5000);
+  }
+</script>
+<style>
+          /* tense chart button styling */
+          .tensechart {
+            background-color: #2F22FF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 70px;
+            left: 20px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 1);
+            transition: transform 0.2s ease;
+          }
+  
+          .tensechart:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+          }
+          
+</style>
+  <div>
+    <button class="tensechart" onclick="window.location.href='tensechart.html';">Tense Chart ✅</button>
+</div>
+</body>
+
+</html>

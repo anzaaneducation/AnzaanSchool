@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Past Perfect Tense</title>
+  
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Sticky Main Menu */
+    .menu {
+        position: sticky;
+        top: 0;
+        background-color: #4CAF50;
+        padding: 3px;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 9px;
+        font-size: 15px;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    /* Explanation Box */
+    .explanation-box {
+        border: 2px solid #4CAF50;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    .explanation-box h2 {
+        text-align: center;
+    }
+
+    /* Affirmative Table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    td {
+        padding: 15px;
+        text-align: left;
+        border: 1px solid black;
+    }
+
+    th {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    /* Row for structure and formula */
+    tr.formula {
+        background-color: #FCC2C2;
+    }
+
+    /* 3D Button */
+    .btn-3d {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .btn-3d:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Timer and translation handling */
+    .translation {
+        display: none;
+        color: green;
+        font-weight: bold;
+    }
+
+    .timer {
+        font-size: 16px;
+        color: red;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    /* Section Headings */
+    h2 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+
+</style>
+</head>
+
+<body>
+  
+<!-- Sticky Main Menu -->
+<div class="menu">
+    <a href="index.html">Home</a>
+    <a href="#affirmative">Affirmative</a>
+    <a href="#negative">Negative</a>
+    <a href="#interrogative">Interrogative</a>
+</div>
+
+<!-- Content Container -->
+<div class="container">
+    
+    <!-- Explanation Box -->
+    <div class="explanation-box">
+        <h2>Past Perfect Tense (पास्ट परफेक्ट टेंस)</h2>
+        <p><strong>English Explanation:</strong> The Past Perfect tense is used to express an action that was completed before another action in the past. It is formed using <strong>had</strong> + past participle of the verb.</p>
+        <p><strong>Hindi Explanation:</strong> पास्ट परफेक्ट टेंस का उपयोग किसी अन्य क्रिया से पहले पूर्ण हो चुकी क्रिया को व्यक्त करने के लिए किया जाता है। इसे <strong>had</strong> + क्रिया का भूतकालीन रूप का उपयोग करके बनाया जाता है।</p>
+        
+        <h3>Usage of Verb:</h3>
+        <p>The verb 'had' is used with all subjects (I, We, You, They, He, She, It) in the Past Perfect tense.</p>
+        <table border="1">
+            <tr>
+                <th>Subject</th>
+                <th>To have Verb (Past)</th>
+            </tr>
+            <tr>
+                <td>I/We/You/They/He/She/It</td>
+                <td>had</td>
+            </tr>
+        </table>
+    </div>
+
+<!-- Affirmative Sentences Table for Past Perfect Tense -->
+<h2 id="affirmative">Affirmative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Affirmative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Subject + had + Past Participle + Object</td>
+        </tr>
+
+        <!-- Affirmative Sentences -->
+        <tr>
+            <td>मैंने काम खत्म कर लिया था।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I had finished the work.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह स्कूल चला गया था।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He had gone to school.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उन्होंने खाना खा लिया था।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They had eaten the food.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+    <td>मैंने पहले ही खाना खा लिया था।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'I had already eaten.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>उसने अपना काम पूरा कर लिया था।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'He had finished his work.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>हमने स्कूल पहुँचने से पहले गाने गा लिए थे।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'We had sung songs before reaching school.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>तुमने बाजार से आकर किताबें पढ़ ली थीं।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'You had read the books after coming from the market.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>मैंने गाना गाने से पहले पढ़ाई कर ली थी।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'I had studied before singing.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>उसने चित्र बनाना शुरू करने से पहले पेंट खरीदी थी।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'She had bought paint before starting to draw.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>हमने गाड़ी चलाने से पहले ड्राइविंग सीखी थी।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'We had learned to drive before driving the car.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>मैंने अपने मित्रों से मिलने से पहले काम किया था।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'I had worked before meeting my friends.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>उसने पार्टी से पहले उपहार खरीद लिया था।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'He had bought a gift before the party.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>हमने स्कूल जाने से पहले नाश्ता कर लिया था।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'We had had breakfast before going to school.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>मैंने फिल्म देखने से पहले खाना खा लिया था।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'I had eaten before watching the movie.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>उसने होमवर्क करने से पहले किताबें पढ़ ली थीं।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'She had read books before doing homework.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>हमने गाने सुनने से पहले खाना खा लिया था।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'We had eaten before listening to songs.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>मैंने पानी पीने से पहले चाय बनाई थी।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'I had made tea before drinking water.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>उसने पढ़ाई करने से पहले खाना खा लिया था।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'He had eaten before studying.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>हमने खेल खेलने से पहले काम पूरा कर लिया था।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'We had finished our work before playing games.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+<tr>
+    <td>मैंने किताब खत्म कर ली थी जब वह आया।</td>
+    <td><button class="btn-3d" onclick="startTranslation(this, 'I had finished the book when he came.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+</tr>
+
+        <!-- Add more 12 similar sentences -->
+    </tbody>
+</table>
+
+<!-- Negative Sentences Table for Past Perfect Tense -->
+<h2 id="negative">Negative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Negative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Subject + had not + Past Participle + Object</td>
+        </tr>
+
+        <!-- Negative Sentences -->
+        <tr>
+            <td>मैंने काम खत्म नहीं किया था।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I had not finished the work.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह स्कूल नहीं गया था।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He had not gone to school.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उन्होंने खाना नहीं खाया था।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They had not eaten the food.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <!-- Add more 12 similar sentences -->
+    </tbody>
+</table>
+
+<!-- Interrogative Sentences Table for Past Perfect Tense -->
+<h2 id="interrogative">Interrogative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Interrogative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Had + Subject + Past Participle + Object?</td>
+        </tr>
+
+        <!-- Interrogative Sentences -->
+        <tr>
+            <td>क्या मैंने काम खत्म कर लिया था?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Had I finished the work?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या वह स्कूल चला गया था?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Had he gone to school?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या उन्होंने खाना खा लिया था?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Had they eaten the food?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <!-- Add more 12 similar sentences -->
+    </tbody>
+</table>
+
+</div>
+<style>
+          /* Back button styling */
+          .back-btn {
+            background-color: #FF5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+          }
+  
+          .back-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+          }
+</style>
+
+    
+    
+    <script>
+        let activeTimer = false;
+
+        function startTranslation(button, translationText) {
+            if (activeTimer) return; // If any timer is running, prevent clicking
+
+            const buttonRow = button.parentElement;
+            const translationElement = buttonRow.querySelector('.translation');
+            const timerElement = buttonRow.querySelector('.timer');
+
+            // Reset any other visible translations
+            const allTranslations = document.querySelectorAll('.translation');
+            const allTimers = document.querySelectorAll('.timer');
+            const allButtons = document.querySelectorAll('.btn-3d');
+
+            allTranslations.forEach(trans => trans.style.display = 'none');
+            allTimers.forEach(timer => timer.textContent = '');
+            allButtons.forEach(btn => btn.style.display = 'inline-block');
+
+            // Hide button and start 5-second timer
+            button.style.display = 'none';
+            activeTimer = true;
+
+            let countdown = 5;
+            const interval = setInterval(() => {
+                timerElement.textContent = `(${countdown}s remaining)`;
+                countdown--;
+            }, 1000);
+
+            setTimeout(() => {
+                clearInterval(interval);
+                timerElement.textContent = '';
+                translationElement.innerHTML = translationText;
+                translationElement.style.display = 'inline-block';
+
+                activeTimer = false; // Allow other buttons to be clicked
+            }, 5000);
+        }
+    </script>
+
+
+</body>
+
+</html>

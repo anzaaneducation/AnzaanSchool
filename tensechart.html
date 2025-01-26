@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tense Chart</title>
+    <style>
+    /* Tense Chart Container */
+    .tense-chart-container {
+        padding: 20px;
+        margin: auto;
+        max-width: 100%;
+        overflow-x: auto; /* Scroll horizontally on small screens */
+        background: linear-gradient(135deg, #f0f4f8, #e4ebf5);
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Tense Chart Table */
+    .tense-chart {
+        width: 100%;
+        border-collapse: collapse;
+        margin: auto;
+        color: #444;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    /* Table Headers */
+    .tense-chart th {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: #ffffff;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-bottom: 3px solid #80d4ff;
+    }
+
+    /* Table Rows */
+    .tense-chart td {
+        padding: 15px;
+        font-size: 14px;
+        color: #333;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: #f9f9f9;
+        transition: all 0.3s ease;
+    }
+
+    /* First Column Styling */
+    .tense-chart td:first-child {
+        font-weight: bold;
+        background: linear-gradient(135deg, #6c757d, #495057);
+        color: #ffffff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        border-right: 3px solid #ced4da;
+    }
+
+    /* Helping Verb Styling */
+    .tense-chart .helping-verb {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    /* Main Verb Styling */
+    .tense-chart .main-verb {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        color: #28a745;
+    }
+
+    /* Hover Effect for Rows */
+    .tense-chart tr:hover td {
+        background: rgba(0, 123, 255, 0.1);
+    }
+
+    /* Glow Effect for the Table */
+    .tense-chart-container:hover {
+        box-shadow: 0 12px 50px rgba(0, 123, 255, 0.3);
+    }
+
+    /* Responsive Design for Smaller Screens */
+    @media (max-width: 768px) {
+        .tense-chart th,
+        .tense-chart td {
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+</style>
+
+<div class="tense-chart-container">
+    <table class="tense-chart">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Present</th>
+                <th>Past</th>
+                <th>Future</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Simple</td>
+                <td>
+                    <span class="helping-verb">Do/Does</span>
+                    <span class="main-verb">V1</span>
+                </td>
+                <td>
+                    <span class="helping-verb">Did</span>
+                    <span class="main-verb">V1</span>
+                </td>
+                <td>
+                    <span class="helping-verb">Will/Shall</span>
+                    <span class="main-verb">V1</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Continuous</td>
+                <td>
+                    <span class="helping-verb">Am/Is/Are</span>
+                    <span class="main-verb">V1-ing</span>
+                </td>
+                <td>
+                    <span class="helping-verb">Was/Were</span>
+                    <span class="main-verb">V1-ing</span>
+                </td>
+                <td>
+                    <span class="helping-verb">Will/Shall be</span>
+                    <span class="main-verb">V1-ing</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Perfect</td>
+                <td>
+                    <span class="helping-verb">Has/Have</span>
+                    <span class="main-verb">V3</span>
+                </td>
+                <td>
+                    <span class="helping-verb">Had</span>
+                    <span class="main-verb">V3</span>
+                </td>
+                <td>
+                    <span class="helping-verb">Will/Shall have</span>
+                    <span class="main-verb">V3</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Perfect Continuous</td>
+                <td>
+                    <span class="helping-verb">Has/Have been</span>
+                    <span class="main-verb">V1-ing</span>
+                </td>
+                <td>
+                    <span class="helping-verb">Had been</span>
+                    <span class="main-verb">V1-ing</span>
+                </td>
+                <td>
+                    <span class="helping-verb">Will/Shall have been</span>
+                    <span class="main-verb">V1-ing</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+
+
+</html>

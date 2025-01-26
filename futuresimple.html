@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Future Simple Tense</title>
+  
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Sticky Main Menu */
+    .menu {
+        position: sticky;
+        top: 0;
+        background-color: #4CAF50;
+        padding: 3px;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 9px;
+        font-size: 15px;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    /* Explanation Box */
+    .explanation-box {
+        border: 2px solid #4CAF50;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    .explanation-box h2 {
+        text-align: center;
+    }
+
+    /* Affirmative Table */
+    table {
+        width: 100%;
+        border-collapse: ;
+        margin-bottom: 30px;
+    }
+
+    td {
+        padding: 15px;
+        text-align: left;
+        border: 1px solid black;
+    }
+
+    th {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    /* Row for structure and formula */
+    tr.formula {
+        background-color: #FCC2C2;
+    }
+
+    /* 3D Button */
+    .btn-3d {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .btn-3d:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Timer and translation handling */
+    .translation {
+        display: none;
+        color: green;
+        font-weight: bold;
+    }
+
+    .timer {
+        font-size: 16px;
+        color: red;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    /* Section Headings */
+    h2 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+
+  </style>
+</head>
+
+<body>
+  
+<!-- Sticky Main Menu -->
+<div class="menu">
+    <a href="index.html">Home</a>
+    <a href="#affirmative">Affirmative</a>
+    <a href="#negative">Negative</a>
+    <a href="#interrogative">Interrogative</a>
+</div>
+
+<!-- Content Container -->
+<div class="container">
+    
+    <!-- Explanation Box -->
+    <div class="explanation-box">
+        <h2>Future Simple Tense (फ्यूचर सिंपल टेंस)</h2>
+        <p><strong>English Explanation:</strong> The Future Simple tense is used to describe actions that will happen in the future. It is formed using <strong>will</strong> + base form of the verb. For plans or intentions, "going to" is also often used.</p>
+        <p><strong>Hindi Explanation:</strong> फ्यूचर सिंपल टेंस का उपयोग उन कार्यों का वर्णन करने के लिए किया जाता है जो भविष्य में होंगे। इसे <strong>will</strong> + क्रिया के मूल रूप का उपयोग करके बनाया जाता है। योजनाओं या इरादों के लिए, अक्सर "going to" का भी उपयोग किया जाता है।</p>
+
+        <h3>Usage of "Will" and "Going to":</h3>
+        <ul>
+            <li><strong>Will:</strong> Used for spontaneous decisions, promises, or predictions about the future.</li>
+            <li><strong>Going to:</strong> Used for planned actions or intentions.</li>
+        </ul>
+    </div>
+
+<!-- Affirmative Sentences Table for Future Simple Tense -->
+<h2 id="affirmative">Affirmative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Affirmative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Subject + will + Verb(base form) + Object</td>
+        </tr>
+
+        <!-- Affirmative Sentences -->
+        <tr>
+            <td>मैं कल स्कूल जाऊँगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will go to school tomorrow.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह खाना पकाएगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will cook the food.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हम मैच जीतेंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We will win the match.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>तुम मुझे कॉल करोगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'You will call me.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वे नई कार खरीदेंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They will buy a new car.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैं अगले महीने छुट्टी पर जाऊँगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will go on vacation next month.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह किताब पढ़ेगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will read the book.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>तुम नया कोर्स शुरू करोगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'You will start a new course.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हम परीक्षा पास करेंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We will pass the exam.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैं पार्टी में जाऊँगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will go to the party.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह अपना काम पूरा करेगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will finish his work.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैं उसे पत्र लिखूँगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will write him a letter.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हम घर जल्दी लौटेंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We will return home early.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह मुझे देखेगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will see me.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैं अगले साल विदेश जाऊँगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will go abroad next year.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Negative Sentences Table for Future Simple Tense -->
+<h2 id="negative">Negative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Negative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Subject + will not + Verb(base form) + Object</td>
+        </tr>
+
+        <!-- Negative Sentences -->
+        <tr>
+            <td>मैं कल स्कूल नहीं जाऊँगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I will not go to school tomorrow.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>वह खाना नहीं पकाएगा।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He will not cook the food.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हम मैच नहीं जीतेंगे।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We will not win the match.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <!-- Add more negative sentences here following the same format -->
+    </tbody>
+</table>
+
+<!-- Interrogative Sentences Table for Future Simple Tense -->
+<h2 id="interrogative">Interrogative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Interrogative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Will + Subject + Verb(base form) + Object?</td>
+        </tr>
+
+        <!-- Interrogative Sentences -->
+        <tr>
+            <td>क्या मैं कल स्कूल जाऊँगा?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Will I go to school tomorrow?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या वह खाना पकाएगा?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Will he cook the food?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <!-- Add more interrogative sentences here following the same format -->
+    </tbody>
+</table>
+
+<!-- Script to handle translations and timing -->
+<style>
+  /* Back button styling */
+  .back-btn {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+
+  .back-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+
+
+<script>
+  let activeTimer = false;
+
+  function startTranslation(button, translationText) {
+    if (activeTimer) return; // If any timer is running, prevent clicking
+
+    const buttonRow = button.parentElement;
+    const translationElement = buttonRow.querySelector('.translation');
+    const timerElement = buttonRow.querySelector('.timer');
+
+    // Reset any other visible translations
+    const allTranslations = document.querySelectorAll('.translation');
+    const allTimers = document.querySelectorAll('.timer');
+    const allButtons = document.querySelectorAll('.btn-3d');
+
+    allTranslations.forEach(trans => trans.style.display = 'none');
+    allTimers.forEach(timer => timer.textContent = '');
+    allButtons.forEach(btn => btn.style.display = 'inline-block');
+
+    // Hide button and start 5-second timer
+    button.style.display = 'none';
+    activeTimer = true;
+
+    let countdown = 5;
+    const interval = setInterval(() => {
+      timerElement.textContent = `(${countdown}s remaining)`;
+      countdown--;
+    }, 1000);
+
+    setTimeout(() => {
+      clearInterval(interval);
+      timerElement.textContent = '';
+      translationElement.innerHTML = translationText;
+      translationElement.style.display = 'inline-block';
+
+      activeTimer = false; // Allow other buttons to be clicked
+    }, 5000);
+  }
+</script>
+
+<style>
+          /* tense chart button styling */
+          .tensechart {
+            background-color: #2F22FF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 70px;
+            left: 20px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 1);
+            transition: transform 0.2s ease;
+          }
+  
+          .tensechart:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+          }
+          
+</style>
+  <div>
+    <button class="tensechart" onclick="window.location.href='tensechart.html';">Tense Chart ✅</button>
+</div>
+
+</body>
+
+</html>

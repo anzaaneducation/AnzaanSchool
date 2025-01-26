@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Present Perfect Tense</title>
+  
+
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Sticky Main Menu */
+    .menu {
+        position: sticky;
+        top: 0;
+        background-color: #4CAF50;
+        padding: 3px;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 9px;
+        font-size: 15px;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    /* Explanation Box */
+    .explanation-box {
+        border: 2px solid #4CAF50;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    .explanation-box h2 {
+        text-align: center;
+    }
+
+    /* Affirmative Table */
+    table {
+        width: 100%;
+        border-collapse: ;
+        margin-bottom: 30px;
+    }
+
+    td {
+        padding: 15px;
+        text-align: left;
+        border: 1px solid black;
+    }
+th {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid black;
+}
+    /* Row for structure and formula */
+    tr.formula {
+        background-color: #FCC2C2;
+    }
+
+    /* 3D Button */
+    .btn-3d {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .btn-3d:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Timer and translation handling */
+    .translation {
+        display: none;
+        color: green;
+        font-weight: bold;
+    }
+
+    .timer {
+        font-size: 16px;
+        color: red;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    /* Section Headings */
+    h2 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+
+</style>
+<body>
+  
+
+<!-- Sticky Main Menu -->
+<div class="menu">
+    <a href="index.html">Home</a>
+    <a href="#affirmative">Affirmative</a>
+    <a href="#negative">Negative</a>
+    <a href="#interrogative">Interrogative</a>
+</div>
+
+<!-- Content Container -->
+<div class="container">
+    
+    <!-- Explanation Box -->
+    <div class="explanation-box">
+        <h2>Present Perfect Tense (प्रेज़ेंट परफेक्ट टेंस)</h2>
+        <p><strong>English Explanation:</strong> The Present Perfect tense is used to describe actions that have been completed at some point before now, but the exact time is not specified. It is formed using <strong>has/have</strong> + past participle of the verb.</p>
+        <p><strong>Hindi Explanation:</strong> प्रेज़ेंट परफेक्ट टेंस का उपयोग उन कार्यों को दर्शाने के लिए किया जाता है जो अब तक पूरे हो चुके हैं, लेकिन सटीक समय का उल्लेख नहीं किया गया है। इसे <strong>has/have</strong> + क्रिया का भूतकालीन रूप का उपयोग करके बनाया जाता है।</p>
+        
+        <h3>Usage of has/have:</h3>
+        <table border="1">
+            <tr>
+                <th>Subject</th>
+                <th>To have Verb</th>
+            </tr>
+            <tr>
+                <td>I/We/You/They</td>
+                <td>have</td>
+            </tr>
+            <tr>
+                <td>He/She/It</td>
+                <td>has</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+<!-- Affirmative Sentences Table for Present Perfect Tense -->
+<h2 id="affirmative">Affirmative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Affirmative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Subject + has/have + Past Participle + Object</td>
+        </tr>
+
+        <!-- Affirmative Sentences -->
+        <tr>
+            <td>मैंने अपना होमवर्क पूरा कर लिया है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I have completed my homework.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उसने अपनी किताब पढ़ ली है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He has read his book.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हमने खाना खा लिया है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We have eaten food.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उन्होंने नया प्रोजेक्ट शुरू कर दिया है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They have started a new project.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>तुमने फिल्म देख ली है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'You have watched the movie.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैंने एक किताब लिखी है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I have written a book.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उसने अपने दोस्तों से मुलाकात की है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'She has met her friends.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हमने रिपोर्ट जमा कर दी है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We have submitted the report.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उन्होंने नया घर खरीदा है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They have bought a new house.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>तुमने अपने काम को पूरा किया है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'You have completed your work.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैंने अपना फोन खो दिया है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I have lost my phone.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उसने गाड़ी धो दी है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He has washed the car.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हमने आज बहुत काम किया है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We have done a lot of work today.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उसने एक नया फोन खरीदा है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'She has bought a new phone.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैंने उसे यह खबर दे दी है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I have given him the news.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हमने परीक्षा की तैयारी कर ली है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We have prepared for the exam.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+    </tbody>
+</table>
+<!-- Negative Sentences Table for Present Perfect Tense -->
+<h2 id="negative">Negative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Negative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Subject + has/have + not + Past Participle + Object</td>
+        </tr>
+
+        <!-- Negative Sentences -->
+        <tr>
+            <td>मैंने अपना होमवर्क पूरा नहीं किया है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I have not completed my homework.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उसने अपनी किताब नहीं पढ़ी है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He has not read his book.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हमने खाना नहीं खाया है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We have not eaten food.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उन्होंने नया प्रोजेक्ट शुरू नहीं किया है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They have not started a new project.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>तुमने फिल्म नहीं देखी है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'You have not watched the movie.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैंने एक किताब नहीं लिखी है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I have not written a book.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उसने अपने दोस्तों से मुलाकात नहीं की है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'She has not met her friends.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हमने रिपोर्ट जमा नहीं की है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We have not submitted the report.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उन्होंने नया घर नहीं खरीदा है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'They have not bought a new house.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>तुमने अपने काम को पूरा नहीं किया है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'You have not completed your work.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैंने अपना फोन नहीं खोया है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I have not lost my phone.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उसने गाड़ी नहीं धोई है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'He has not washed the car.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हमने आज कोई काम नहीं किया है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We have not done any work today.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>उसने एक नया फोन नहीं खरीदा है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'She has not bought a new phone.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>मैंने उसे यह खबर नहीं दी है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'I have not given him the news.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>हमने परीक्षा की तैयारी नहीं की है।</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'We have not prepared for the exam.')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Interrogative Sentences Table for Present Perfect Tense -->
+<h2 id="interrogative">Interrogative Sentences</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Interrogative Sentences</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="formula">
+            <td colspan="2">Structure: Has/Have + Subject + Past Participle + Object?</td>
+        </tr>
+
+        <!-- Interrogative Sentences -->
+        <tr>
+            <td>क्या आपने अपना होमवर्क पूरा कर लिया है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have you completed your homework?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या उसने अपनी किताब पढ़ ली है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Has he read his book?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या हमने खाना खा लिया है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have we eaten food?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या उन्होंने नया प्रोजेक्ट शुरू कर दिया है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have they started a new project?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या तुमने फिल्म देख ली है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have you watched the movie?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या मैंने एक किताब लिखी है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have I written a book?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या उसने अपने दोस्तों से मुलाकात की है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Has she met her friends?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या हमने रिपोर्ट जमा कर दी है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have we submitted the report?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या उन्होंने नया घर खरीदा है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have they bought a new house?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या तुमने अपना काम पूरा किया है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have you completed your work?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या मैंने अपना फोन खो दिया है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have I lost my phone?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या उसने गाड़ी धो दी है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Has he washed the car?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या हमने आज ज्यादा काम किया है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have we done much work today?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या उसने नया फोन खरीदा है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Has she bought a new phone?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या मैंने उसे यह खबर दे दी है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have I given him the news?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+        <tr>
+            <td>क्या हमने परीक्षा की तैयारी की है?</td>
+            <td><button class="btn-3d" onclick="startTranslation(this, 'Have we prepared for the exam?')">Translation</button><span class="timer"></span><span class="translation"></span></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+</div>
+
+
+
+<style>
+          /* tense chart button styling */
+          .tensechart {
+            background-color: #2F22FF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 70px;
+            left: 20px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 1);
+            transition: transform 0.2s ease;
+          }
+  
+          .tensechart:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+          }
+          
+</style>
+  <div>
+    <button class="tensechart" onclick="window.location.href='tensechart.html';">Tense Chart ✅</button>
+</div>
+
+
+</body>
+    
+    
+    <script>
+        let activeTimer = false;
+
+        function startTranslation(button, translationText) {
+            if (activeTimer) return; // If any timer is running, prevent clicking
+
+            const buttonRow = button.parentElement;
+            const translationElement = buttonRow.querySelector('.translation');
+            const timerElement = buttonRow.querySelector('.timer');
+
+            // Reset any other visible translations
+            const allTranslations = document.querySelectorAll('.translation');
+            const allTimers = document.querySelectorAll('.timer');
+            const allButtons = document.querySelectorAll('.btn-3d');
+
+            allTranslations.forEach(trans => trans.style.display = 'none');
+            allTimers.forEach(timer => timer.textContent = '');
+            allButtons.forEach(btn => btn.style.display = 'inline-block');
+
+            // Hide button and start 5-second timer
+            button.style.display = 'none';
+            activeTimer = true;
+
+            let countdown = 5;
+            const interval = setInterval(() => {
+                timerElement.textContent = `(${countdown}s remaining)`;
+                countdown--;
+            }, 1000);
+
+            setTimeout(() => {
+                clearInterval(interval);
+                timerElement.textContent = '';
+                translationElement.innerHTML = translationText;
+                translationElement.style.display = 'inline-block';
+
+                activeTimer = false; // Allow other buttons to be clicked
+            }, 5000);
+        }
+    </script>
+
+
+
+</html>
