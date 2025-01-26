@@ -50,10 +50,19 @@
 
     <h2>Important Knowledge</h2>
     <div class="grid">
-      <a href="google.com">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZS4ptqD6O0wcr2UDtaYRJxhmyiudq9FOYRCT3c3f-mPfUIrPy6sbXoc8-Bw7_pHABzn8MRc8cgbeqet6IArj-cEaRvXMY4ND5JV9V2d57P5Wz5dVe6sKENzCy8_VDMpHCuF0TNse69xQ615zCyeIDAN_ULGVo_Mefc_22S3B-FIEM7U23siDr9W-voFZC/s1080/20250119_191458_0000.png" alt="Self-Growth icon" />
-        <span>Rajasthan Map [NEW]</span>
-      </a>
+     <a href="#" onclick="openRajasthanMapPopup()">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZS4ptqD6O0wcr2UDtaYRJxhmyiudq9FOYRCT3c3f-mPfUIrPy6sbXoc8-Bw7_pHABzn8MRc8cgbeqet6IArj-cEaRvXMY4ND5JV9V2d57P5Wz5dVe6sKENzCy8_VDMpHCuF0TNse69xQ615zCyeIDAN_ULGVo_Mefc_22S3B-FIEM7U23siDr9W-voFZC/s1080/20250119_191458_0000.png" alt="Self-Growth icon" />
+  <span>Rajasthan Map [NEW]</span>
+</a>
+
+<div id="rajasthanMapPopup" class="popup" style="display: none;">
+  <div class="popup-content">
+    <button class="close-btn" onclick="closeRajasthanMapPopup()">✖</button>
+    <h2>Rajasthan New Map</h2>
+    <img id="rajasthanMapImage" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTd0g8zbKpFd5bXwT6H2YV1f33WSg8Z3Q_wMDvzvKIq7bpjp_fV3nUHezW991b1I6cWeFRSNhxfTFRABLukAB5suqU1kO9LYGitRNqwPkTTsX9eVFWSfhbYLt1R2Yq-Za9huW3nPbMA-R1PyjU5O4aPjvpEzjPSLEB_WV-0mYg-gm62MDBG7CJbmNYhLcl/s1080/6059840186688324737.jpg" alt="Rajasthan New Map" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+  </div>
+</div>
+
      <a href="#" onclick="openImagePopup()">
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl2J8RQI3diKoWEYYyWINZwgIqB3yRhwHGXM3HoDT-yN2RZyf7SDERazfRGZ72JZ9cufBNMIn5F7PWPD472MIi6-Z7uYUVy-DqHfsLXoVnMGOTcHDQeXOF2nyMGkinbPOIPeN9KNnwrhKZurwx-wHo0G8IzdLQq-2jOuJzAe-kSoy0kUBu0bk1BVy7Hhie/s800/6102734102382887533.jpg" alt="Business & Career icon" />
   <span>heart</span>
@@ -240,7 +249,7 @@
   <br /><br />
   <footer>
     <div class="nav-links">
-      <a href="notification.html2">
+      <a href="notification.html">
         <i class="fas fa-bell"></i>
         <span>New</span>
       </a>
@@ -336,6 +345,53 @@
   }
 </script>
 
+<script>
+  function openRajasthanMapPopup() {
+    document.getElementById('rajasthanMapPopup').style.display = 'flex';
+  }
+
+  function closeRajasthanMapPopup() {
+    document.getElementById('rajasthanMapPopup').style.display = 'none';
+  }
+</script>
+
+<style>
+  #rajasthanMapPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #rajasthanMapPopup .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+  }
+
+  #rajasthanMapPopup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #rajasthanMapImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+</style>
 </body>
 
 
