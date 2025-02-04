@@ -24,12 +24,39 @@
 
 
     <div class="ticker-wrapper">
-        <div class="ticker">
-         “The Road To Success And The Road To Failure Are Almost Exactly The Same.”
+        <div class="ticker" id="motivationalQuote">
+            
         </div>
     </div>
 
+    <script>
+  const quotes = [
+    "हर सुबह एक नया अवसर है, बस खुद पर विश्वास रखो।",
+    "हार मानने से पहले, एक बार और प्रयास करने की सोचो।",
+    "आत्मविश्वास ही सफलता की पहली सीढ़ी है।",
+    "छोटे कदम भी बड़ी मंजिल की ओर ले जाते हैं।",
+    "जब तक आप खुद हार नहीं मानते, कोई भी आपको हरा नहीं सकता।",
+  "रास्ते कभी खत्म नहीं होते, बस चलने का हौसला होना चाहिए।",
+  "सपनों को पाने के लिए जागना पड़ता है, नींद में तो हर कोई सोता है।",
+  "मुश्किलें आएंगी, लेकिन हार मानना कभी मत।",
 
+    // Add 98 more quotes here...
+  ];
+
+  function displayRandomQuote() {
+    let lastQuoteIndex = parseInt(localStorage.getItem('lastQuoteIndex'), 10);
+    let quoteIndex;
+    do {
+      quoteIndex = Math.floor(Math.random() * quotes.length);
+    } while (quoteIndex === lastQuoteIndex && quotes.length > 1);
+    
+    const quote = quotes[quoteIndex];
+    document.getElementById('motivationalQuote').innerHTML = quote;
+    localStorage.setItem('lastQuoteIndex', quoteIndex);
+  }
+
+  displayRandomQuote();
+</script>
 
 
 
@@ -43,7 +70,7 @@
 
   <main>
 
-    <h2>Important Knowledge </h2>
+    <h2>Important Knowledge  <i class="fas fa-award"></i> </h2>
     <div class="grid">
      <a href="#" onclick="openRajasthanMapPopup()">
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZS4ptqD6O0wcr2UDtaYRJxhmyiudq9FOYRCT3c3f-mPfUIrPy6sbXoc8-Bw7_pHABzn8MRc8cgbeqet6IArj-cEaRvXMY4ND5JV9V2d57P5Wz5dVe6sKENzCy8_VDMpHCuF0TNse69xQ615zCyeIDAN_ULGVo_Mefc_22S3B-FIEM7U23siDr9W-voFZC/s1080/20250119_191458_0000.png" alt="Self-Growth icon" />
@@ -117,6 +144,44 @@
     max-height: 100%;
     object-fit: contain;
   }
+ 
+  #rajasthanMapPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #rajasthanMapPopup .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+  }
+
+  #rajasthanMapPopup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #rajasthanMapImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+
 </style>
      <a href="#" onclick="openImagePopup()">
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl2J8RQI3diKoWEYYyWINZwgIqB3yRhwHGXM3HoDT-yN2RZyf7SDERazfRGZ72JZ9cufBNMIn5F7PWPD472MIi6-Z7uYUVy-DqHfsLXoVnMGOTcHDQeXOF2nyMGkinbPOIPeN9KNnwrhKZurwx-wHo0G8IzdLQq-2jOuJzAe-kSoy0kUBu0bk1BVy7Hhie/s800/6102734102382887533.jpg" alt="Business & Career icon" />
@@ -308,6 +373,11 @@
         <i class="fas fa-bell"></i>
         <span>New</span>
       </a>
+      <a href="#" onclick="openHealPopup()">
+        <i class="fab fa-asymmetrik"></i>
+        <span>Heal</span>
+      </a>
+      
       <a href="index.html" class="active">
         <i class="fas fa-search"></i>
         <span>Explore</span>
@@ -326,6 +396,74 @@
   
   
   
+
+
+
+<div id="healPopup" class="popup" style="display: none;">
+  <div class="popup-content">
+    <button class="close-btn" onclick="closeHealPopup()">✖</button>
+    <h2 style="font-family: 'Pacifico', cursive; font-size: 24px;">Radhe Radhe</h2>
+    <img id="healImage" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRu9tSj-4mESoEAyKusIvBT4S_lyOO5etJxnpOjlBhiIds-1VHUF37lRqGmaGLUKakASoInY0caDlgwDWxsjbEuFYorg0Q5eCCvVToANnz0HMsOnAwrmE8G2X5SnW_F6ccS8m7VeeSPp3I_36Mbe5rxpFMVaU6BeNTBu8fYp6tcorgGdPKw3GqQNDEd0UD/s1600/%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%BE%E0%A4%AF%20%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%81%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%BE%E0%A4%AF%20%E0%A4%B9%E0%A4%B0%E0%A4%AF%E0%A5%87%20%E0%A4%AA%E0%A4%B0%E0%A4%AE%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%A8%E0%A5%87%20%E0%A5%A5%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A3%E0%A4%A4%E0%A4%83%20%E0%A4%95%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B6%E0%A4%A8%E0%A4%BE%E0%A4%B6%E0%A4%BE%E0%A4%AF%20%E0%A4%97%E0%A5%8B%E0%A4%B5%E0%A4%BF%E0%A4%82%E0%A4%A6%E0%A4%BE%E0%A4%AF%20%E0%A4%A8%E0%A4%AE%E0%A5%8A%20%E0%A4%A8%E0%A4%AE%E0%A5%83%20%E0%A5%A5.png" alt="Heal Image" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+  </div>
+</div>
+
+<script>
+  function openHealPopup() {
+    document.getElementById('healPopup').style.display = 'flex';
+  }
+
+  function closeHealPopup() {
+    document.getElementById('healPopup').style.display = 'none';
+  }
+</script>
+
+<style>
+  #healPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #healPopup .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+  }
+
+  #healPopup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #healImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
   
   
   
@@ -410,43 +548,6 @@
   }
 </script>
 
-<style>
-  #rajasthanMapPopup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #rajasthanMapPopup .popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 80%;
-    max-height: 80%;
-    overflow: auto;
-  }
-
-  #rajasthanMapPopup .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  #rajasthanMapImage {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
-</style>
 
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </body>
