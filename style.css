@@ -22,7 +22,7 @@ body {
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
         position: relative;
         
-        padding: 10px 0; /* Adjusted for vertical centering */
+        padding: 15px 0; /* Adjusted for vertical centering */
         text-align: center; /* Ensures the text is horizontally centered */
         display: flex; /* Enables flexbox */
         align-items: center; /* Vertically centers the content */
