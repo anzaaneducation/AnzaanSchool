@@ -39,6 +39,9 @@
   "रास्ते कभी खत्म नहीं होते, बस चलने का हौसला होना चाहिए।",
   "सपनों को पाने के लिए जागना पड़ता है, नींद में तो हर कोई सोता है।",
   "मुश्किलें आएंगी, लेकिन हार मानना कभी मत।",
+  "बिना दूरी तय किये हुए कही दूर आप नहीं पहुंच सकते।",
+  "जीवन में अपने लक्ष्य के लिए दृढ़ संकल्पित होना आवश्यक होता है, इसी से मानव सफलता पाता है।",
+"मेहनत करना ही आपका पहला कर्म होना चाहिए, क्योंकि सफलता उसी को मिलती है, जो मेहनती होता है।",
 
     // Add 98 more quotes here...
   ];
@@ -558,10 +561,43 @@
   function closeRajasthanMapPopup() {
     document.getElementById('rajasthanMapPopup').style.display = 'none';
   }
+
+
+
+
+
+
+
+
+
+
+
 </script>
 
 
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+
+
+
+
+
+
+
+
+<div id="popup" style="position: fixed; bottom: 0; right: 0; width: 3px; height: 2px; background-color: #fff; border: 1px solid #ddd; padding: 10px; display: none;">
+  <iframe src="https://anzaaneducationwelcome.blogspot.com/" frameborder="0" width="100%" height="100%"></iframe>
+</div>
+
+<script>
+  window.onload = function() {
+    document.getElementById('popup').style.display = 'block';
+    setTimeout(function() {
+      document.getElementById('popup').style.display = 'none';
+    }, 9000);
+  }
+</script>
 </body>
 
 
