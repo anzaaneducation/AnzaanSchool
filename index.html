@@ -598,6 +598,77 @@
     }, 9000);
   }
 </script>
+
+
+
+  
+<script>
+  (function () {
+    const images = [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbIZJEwCx_78UKs8E5PYmoawKvHB6Bp4Yxs2SUYmjt-e3hdT_Y-VzBlsK6C_PSYeTCX97dgk0GgEZ3TRyowVn-ca7zmnKGuHwPAmLKwz17KN4QV9lJeI6g5EjcMB9XHzSrGmLHaERuULakkInqhNAauCKNUYfk-l-oJp96Itv5g6F7FqtmisQYcnyQ_EQR/s1080/1.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiic6SoE5AL5enabXJloN2xB6mjzq1b2dSOk6s6KPIp8glUsWaI9E6EejHoAdg3QdB0adQybwn136q_qKQ-rkckHNaJ7qBpTqQphu7ZSKnUeCq61y7Cb2jetTupivcgPQ0Nz2nO77BZbxcqi5Evr6Bu7VdV_azuuM0IFzgELQLifBxKZooPBk_ixvsRDezR/s1080/2.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUaTMF3ohGLxIHnoXLpBeUBgsrV1Vui_7n1wDJxrb6bhECe5INd4ioNlpqnfPB9Aga1R6U7qkbmS091P26QYrD2mQqNk8hciEqcYC5J6kZ9V6HsePntIutYMiBvThfbV-H8LBzBNp_6Qf457u8xBWec3GjBteNOPzfgu8xLq-y9dUTGKZPQXqf4yms8s9D/s1080/3.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5RMqahh_7DKNdMjkLDbBGHEhfu3S5xdYNBlZ7IFA3GI_UgIOWFxhmToQEkcMvkd6BQyT5YqW6ofzDjkK_VE_blkFYUOtQexROozCWGlPI5z3jNHiPkVxhwggrucRlpYV8Ko2lUeZqMAHZ-APa1YtKUlin6yPqeDxpYoQA3OgwFF3UKePsC1PjlXYpUGWe/s1080/4.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkSk3UEJ326TBEiahxR_ZwHuVDhQXq2HjRLklHTlAli566_lWB2iw6NbQprU47pBAuMKM6dO8A_DBW0MOnPTp-mAV0xCVtdJb8UQKCXqTpYwZs8ylLrRGlTCWudJVJVA_63NAw2uyfWmjN4LYLcLhezgt1CV32OLIaXMGHUK7FglzjtBvjfDzaSaTyAWwQ/s1080/5.png",
+         ];
+
+    function createFloatingImage() {
+        // Remove previous images
+        document.querySelectorAll('.floating-image').forEach(img => img.remove());
+
+        // Create image element
+        const img = document.createElement('img');
+        img.src = images[Math.floor(Math.random() * images.length)];
+        img.classList.add('floating-image');
+
+        // Apply styles
+        Object.assign(img.style, {
+            position: 'fixed',
+            width: '150px', // Smaller for smooth movement
+            height: 'auto',
+            opacity: '1', // Keep it clear (removed transparency)
+            zIndex: '9999',
+            pointerEvents: 'none',
+            transition: 'transform 6s linear',
+            filter: 'transparent', // Improves clarity
+            willChange: 'transform'
+        });
+
+        document.body.appendChild(img);
+
+        function moveImage() {
+            const randomX = Math.random() * (window.innerWidth - 200);
+            const randomY = Math.random() * (window.innerHeight - 200);
+            const rotateX = Math.random() * 60 - 30;
+            const rotateY = Math.random() * 60 - 30;
+            const rotateZ = Math.random() * 360 - 180;
+            const scale = Math.random() * 0.5 + 0.75;
+
+            img.style.transform = `translate(${randomX}px, ${randomY}px) 
+                                   rotateX(${rotateX}deg) 
+                                   rotateY(${rotateY}deg) 
+                                   rotateZ(${rotateZ}deg) 
+                                   scale(${scale})`;
+        }
+
+        // Move every 4 seconds for continuous motion
+        setInterval(moveImage, 4000);
+
+        // Remove and replace image after 10 minutes
+        setTimeout(() => {
+            img.style.opacity = '0';
+            setTimeout(() => img.remove(), 3000);
+        }, 600000);
+    }
+
+    // Start on page load
+    createFloatingImage();
+
+    // Create a new image every 10 minutes
+    setInterval(createFloatingImage, 600000);
+})();
+
+</script>
 </body>
 
 
